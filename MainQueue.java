@@ -5,7 +5,6 @@ public class MainQueue {
 
     public static void main(String[] args){
 
-        // Type your code here ...
-
+        // type your code here ...
     }
 }

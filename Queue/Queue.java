@@ -10,16 +10,17 @@ public class Queue<T> extends QueueBase<T> {
 
     @Override
     public void add(T arg) {
-
         arr.add(arg);
         size = size + 1;
     }
 
     @Override
     public T poll() {
+        T dequed = arr.get(0);
         arr.remove(0);
         size = size - 1;
-        return null;
+        
+        return dequed;
     }
 
     @Override
