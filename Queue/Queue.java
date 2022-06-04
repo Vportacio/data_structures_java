@@ -3,6 +3,23 @@ package Queue;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Queue data structure implementation
+ *
+ * Queue follow FIFO principle, suggest that first item added in queue it will be first out
+ *
+ * In this case has used a abstract class because the base of queue don`t have others heritages
+ * this implementation discard the need of use interface (we don`t want mutiple heritage) 
+ * 
+ * @return
+ * Add   - Self Arg added in queue <p>
+ * Poll  - Pool first item in queue <p>
+ * Show  - List all args in stack <p>
+ * Peek  - Return first item in queue  <p>
+ * 
+ * @see  QueueBase
+ * 
+ **/
 public class Queue<T> extends QueueBase<T> {
 
     private List<T> arr = new ArrayList<T>();
